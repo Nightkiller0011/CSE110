@@ -11,4 +11,4 @@ print(f"You have {eggs} eggs.\n")
 cookies = int(ask("How many cookies do you have? "))
 people = int(ask("How many people are there? "))
 cookiesPerPerson = cookies / people
-print(f"Each person may have {cookiesPerPerson} cookies.")
+print(f"Each person may have {cookiesPerPerson} cookies.\n")
