@@ -2,7 +2,7 @@
 File: assignment3.py
 Author: Joshua Ellis
 
-Purpose: 
+Purpose: Find the total and prices associated with a families night out.
 
 # Above and Beyond completed.
 """
