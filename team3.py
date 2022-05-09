@@ -6,10 +6,7 @@ Purpose: Determine how fast an object will fall.
 
 Above and Beyond completed.
 """
-
 import math
-
-
 
 print(f"Welcome to the velocity calculator. Please enter the following:\n")
 # mass
