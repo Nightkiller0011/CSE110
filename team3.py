@@ -24,6 +24,7 @@ C = float(input(f"Crag constant (0.5 for sphere, 1.1 for cylinder): "))
 
 c = (1 / 2) * p * A * C
 v = math.sqrt(m * g / c) * (1 - math.exp((-math.sqrt(m*g*c)/m)*t))
+tv = math.sqrt(m * g / c)
 
 print(f"\nThe inner value of c is: {c:.3f}")
 print(f"The velocity after {t} seconds is: {v:.3f} m/s")
