@@ -1,5 +1,5 @@
 """
-File: assignment3.py
+File: assignment3and4.py
 Author: Joshua Ellis
 
 Purpose: Find the total and prices associated with a families night out.
