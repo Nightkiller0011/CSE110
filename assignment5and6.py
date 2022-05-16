@@ -11,7 +11,7 @@ def gametext(words):
 def display(health, mana, gold):
     print(f"Health:{health:^6d} Mana:{mana:^6d} Gold:{gold:^6d}")
 
-    # Set terminal height to 12 lines
+    # Set terminal height to 12 lines for the best experience.
 
 
 def game(health, mana, gold):
@@ -69,7 +69,7 @@ def game(health, mana, gold):
         mana = 0
         gold = 0
         display(health,mana,gold)
-        gametext(f"Long story short... You kinda died. That spider combined with seeing an ogre just kinda killed you. The ogre took everythign you\nhad (even your shoes).")
+        gametext(f"\nLong story short... You kinda died. That spider combined with seeing an ogre just kinda killed you. The ogre took everythign you\nhad (even your shoes).")
 
 
 
