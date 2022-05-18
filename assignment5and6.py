@@ -22,25 +22,56 @@ def game(health, mana, gold):
     display(health,mana,gold)
     gametext(f"Welcome to the game {name}!\nYou are a Dwarf who is trying to find treasure inside of a cave.\nYou come upon a branch in the caves. Two options are present,\nLeft and Right?")
     option1 = input(f"What is your decision? Left or Right? ")
-    if option1 == "left" or option1 == "Left":
+    if option1.lower() == "left":
         health = health-1
         display(health,mana,gold)
-        gametext(f"You decided to go left. Little did you know there was a spider in this direction, and you HATE spiders.\nYou lose 1 health because you jump away from the spider and hit the wall.\n\nThe path ahead is dark. Will you use magic to light the way?")
-
-    else:
+        gametext(f"You decided to go left. Little did you know there was a spider in this direction, and you HATE spiders.\nYou lose 1 health because you jump away from the spider and hit the wall.\n\nYou see a splitting path, Your options are Up, centeral, or down.")
+        loop1 = input(f"Which do you choose? ")
+        if loop1.lower() == "up":
+            display(health,mana,gold)
+            gametext(f"\nYou decide to go up! When you do, you end up just climbing out of the dungeon completely.\nSomeone sees you and you are dranded a coward all your days. That really sucks.\n")
+            return 0
+        elif loop1.lower() == "central":
+            display(health,mana,gold)
+            gametext(f"\nYou decide to pursue the central path! When you do, You find a papers. What is on them? Oh no!\nIt is a homework assignment and you forgot to study! You rush home and forget\nthat you were supposed to finish the dungeon in the cave.")
+            return 0
+        elif loop1.lower() == "down":
+            display(health,mana,gold)
+            gametext(f"\nYou decide to go down! When you do, You find a skeleton! How will you decide to take it on? Will you\npunch it, or use your battleaxe?\n")
+            loop2 = input(f"Your choice (punch or battleaxe)? ")
+            if loop2.lower() == "punch":
+                display(health,mana,gold)
+                gametext(f"You decide to punch the thing in the freaking face! You wind up your arm and filng it forward.\nNot such a bright idea becaues the skeleton is made of some pretty hard bone. You feel\nyour hand crunch and wonder why its bone beat your bone in this wierd rock paper scissors.\nSadly, you black out and wake up at home, having been saved by someone else.")
+                return 0
+            elif loop2.lower() == "battleaxe":
+                display(health,mana,gold)
+                gametext(f"You decide to use your battleaxe!(Like a true Dwarf) You wind up and swing it forward and slam it into the skull of the skeleton and hear\nthe cracking and breaking of bones. You stand triumphant and continue, stepping over some useless paper as you climb from the hole, realizing you\nback at the beginning, you now head right down the original path. Will you use magic to light the way?")
+            else:
+                gametext(f"Sorry, but that was not a choice! You lose!")
+                return 0
+        else:
+            gametext(f"Sorry, but that was not a choice! You lose!")
+            return 0
+    elif option1.lower() == "right":
         gold = gold + 10
         display(health,mana,gold)
         gametext(f"You decided to go right. Upon walking a few feet you get tired and lean against the wall.\nThe wall moves, having been a pressure plate, and opens a hole in the wall, Revealing 10 gold!\n You hurridly take it and put it in your pouch. The path ahead is dark. Will you use magic to light the way?\n")
+    else:
+        gametext(f"Sorry, but that was not a choice! You lose!")
+        return 0
     option2 = input(f"Yes or no? ")
-    if option2 == "yes" or option2 == "Yes":
+    if option2.lower() == "yes":
         mana = mana - 1
         gold = gold + 10
         display(health,mana,gold)
         gametext(f"With a flicker of sparks, a flame comes forth from your hand and you see that directly in front of you\nis a large hole. Imagine what could have happened had you chosen to not use magic! You walk forward\nand see the 10 gold on the ground! A little ahead, There is an Ogre in front of you. Will you blast it away with magic,\nor use your words?")
-    else:
+    elif option2.lower() == "no":
         health = health - 1
         display(health,mana,gold)
         gametext(f"You choose to save your mana and walk forward. Instantly you regret your decision as you fail to feel\nany solid ground under your foot as you put all your weight behind it. You get up and brush off\nthe dirt from your scraped knee and walk forward. You continue, squinting and slowly progressing through the darkness,\nwhen you happen to bump into an ogre. Will you use magic to put this Ogre in it's place, or will you insult it with your superior words?")
+    else:
+        gametext(f"Sorry, but that was not a choice! You lose!")
+        return 0
     option3 = input(f"Words or Magic? ")
     if (option1 == "right" or option1 == "Right") and (option2 == "yes" or option2 == "Yes") and (option3 == "words" or option3 == "Words"):
         gold = gold - 20
