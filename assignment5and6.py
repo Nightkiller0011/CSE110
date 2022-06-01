@@ -73,24 +73,24 @@ def game(health, mana, gold):
         gametext(f"Sorry, but that was not a choice! You lose!")
         return 0
     option3 = input(f"Words or Magic? ")
-    if (option1 == "right" or option1 == "Right") and (option2 == "yes" or option2 == "Yes") and (option3 == "words" or option3 == "Words"):
+    if (option1.lower() == "right") and (option2.lower() == "yes") and (option3.lower() == "words"):
         gold = gold - 20
         health = health - 4
         display(health,mana,gold)
         gametext(f"You try to use your words... Bad choice! (it is an ogre after all) The Ogre listens for about three\nseconds and then charges you, knocking you back. As you hit the ground, you hear your coins fly from\nyour pocket, and You run from the cave, not wanting to stay longer.\n")
-    elif (option1 == "right" or option1 == "Right") and (option2 == "yes" or option2 == "Yes") and (option3 == "magic" or option3 == "Magic"):
+    elif (option1.lower() == "right") and (option2.lower() == "yes") and (option3.lower() == "magic"):
         gold = gold - 10
         mana = mana - 2
         display(health,mana,gold)
         gametext(f"You decide to use Magic. You have been on a roll today, You are 20 gold coins up and you feel GOOD.\nYou cast a lightening spell on the Ogre, who then brushes it off and throws a stone at your unprotected face.\n You fall back and hear coins fall from your pouch as you get up and sprint from the dungeon with a bloody nose.\n")
-    elif (option1 == "right" or option1 == "Right") and (option2 == "no" or option2 == "No") and (option3 == "words" or option3 == "Words"):
+    elif (option1.lower() == "right") and (option2.lower() == "no") and (option3.lower() == "words"):
         display(health,mana,gold)
         gametext(f"You try to use your words... Nice! After having a kinda bad day scraping your knee, you complain and\ngrumble, which the Ogre seems to understand. He lets you pass without hurting you, and you leave the\n dungeon.\n")
-    elif (option1 == "right" or option1 == "Right") and (option2 == "no" or option2 == "No") and (option3 == "magic" or option3 == "Magic"):
+    elif (option1.lower() == "right") and (option2.lower() == "no") and (option3.lower() == "magic"):
         mana = mana - 3
         display(health,mana,gold)
         gametext(f"You do not wish for this day to be any worse, so you decide to use magic on the Ogre. You summon the\nmagic within you and blast the Ogre with a supercharged frost spell, which leaves it frozen in place.\n You walk past the Ogre as it is helpless to do anything but watch as you leave the dungeon victorious.\n")
-    elif (option1 == "left" or option1 == "Left") and (option2 == "no" or option2 == "No") and (option3 == "words" or option3 == "Words"):
+    elif (option1.lower() == "left") and (option2.lower() == "no") and (option3.lower() == "words"):
         gold = gold + 400
         display(health,mana,gold)
         gametext(f"You. Are. Done. You have had it with stupid stuff happening today. You tell the ogre all you wanted to do was impress\nyour father (the nobleman) and prove to him that you were more a man than he was (He could never complete\nthe dungeon) The Ogre lowers his rock and you see him puch on a secret portion of the wall. Inside is a mountain\nof gold from other adventurers and he tells you to take it all and rub it in your fathers face. Today was an absolute win!!!")
@@ -112,5 +112,4 @@ health = 5
 mana = 3
 gold = 0
 game(health, mana, gold)
-
 
