@@ -2,7 +2,7 @@
 File: team7.py
 Author: Joshua Ellis
 
-Purpose: Higher/Lower game.
+Purpose: Altering characters in words.
 
 Above and Beyond completed.
 """
