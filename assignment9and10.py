@@ -2,7 +2,7 @@
 File: assignment9and10.py
 Author: Joshua Ellis
 
-Purpose: .
+Purpose: Create a menu with options and allow the user to cycle through them.
 
 # Above and Beyond completed.
 """
