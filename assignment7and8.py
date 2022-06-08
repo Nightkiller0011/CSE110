@@ -21,17 +21,17 @@ def hinttest2(word, guess):
             print(f"{letter1.lower()}", end=" ")
         else:
             print(f"_", end=" ")
-    return;
+    return
 
 
 
 playagain = 'yes'
 while playagain.lower() == "yes":
     print(f"\n  /------------\\ \nGenerating new word.\n  \\------------/ \n")
-    word_num = random.randint(1, 5)
+    word_num = random.randint(1, 6)
     go_again = 1
     guesses = 0
-    guess = "                         "
+    guess = "                                         "
     word = ""
     if word_num == 1:
         word = "bubble"
