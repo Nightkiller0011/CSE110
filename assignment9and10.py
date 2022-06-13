@@ -21,9 +21,14 @@ def main():
             print(f"\nMenu Options: \n1. - Add New Item\n2. - Display Contents of Cart\n3. - Remove Item from Cart\n4. - Compute Total of Cart\n5. - Quit\n")
             option = input("You choose: ")
             if option == '1':
+                price = -1
                 print()
                 item = input(f"What item would you like to add? ")
-                price = float(input(f"What is the price of {item}? $"))
+                
+                while price < 0:
+                    price = float(input(f"What is the price of {item}? $"))
+                
+                
                 shopping_cart.append(item)
                 shopping_price.append(price)
                 print(f"Item - {item} : ${price} - was added to cart.")
