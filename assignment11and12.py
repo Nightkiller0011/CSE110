@@ -2,7 +2,7 @@
 File: assignment11and12.py
 Author: Joshua Ellis
 
-Purpose: .
+Purpose: This program checks information against a database and returns information depending on user input.
 
 # Above and Beyond completed.
 """
