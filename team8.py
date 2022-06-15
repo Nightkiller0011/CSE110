@@ -26,7 +26,7 @@ while play == 'y':
             average = sum/count
             if number > lnumber:
                 lnumber = number
-            if number >0 and number< spnumber:
+            if number > 0 and number < spnumber:
                 spnumber = number
         if number != 0:
             numbers.append(number)
