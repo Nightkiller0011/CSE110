@@ -77,5 +77,11 @@ def main():
     print(f"The max life expectancy was: {ylnumber} from {ylplace}.")
     print(f"The min life expectancy was: {yspnumber} from {yspplace}.\n")
 
+def playagain():
+    again = "y"
+    while again == "y":
+        main()
+        again = input(f"Would you like to try another year?(y/n) ")
 
-main()
+
+playagain()
