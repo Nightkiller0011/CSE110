@@ -6,8 +6,10 @@ Purpose: This program checks information against a database and returns informat
 
 # Above and Beyond completed.
 """
-def main():    
-    year_of_interest = int(input(f"\nEnter Year of Interest: "))
+def main():  
+    year_of_interest = 0 
+    while year_of_interest <= 1750:
+        year_of_interest = int(input(f"\nEnter Year of Interest: "))
 
     file_data = []
     file = None
