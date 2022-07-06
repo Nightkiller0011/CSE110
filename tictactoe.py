@@ -21,10 +21,10 @@ def main():
                 if (game_data[0] == "X" and game_data[3] == "X" and game_data[6] == "X") or (game_data[1] == "X" and game_data[4] == "X" and game_data[7] == "X") or (game_data[2] == "X" and game_data[5] == "X" and game_data[8] == "X") or (game_data[0] == "X" and game_data[4] == "X" and game_data[8] == "X") or (game_data[2] == "X" and game_data[4] == "X" and game_data[6] == "X") or (game_data[0] == "X" and game_data[1] == "X" and game_data[2] == "X") or (game_data[3] == "X" and game_data[4] == "X" and game_data[5] == "X") or (game_data[6] == "X" and game_data[7] == "X" and game_data[8] == "X"):
                     print(f"\nPlayer 1 wins! \n")
                     loop = "n"
-                if (game_data[0] == "O" and game_data[3] == "O" and game_data[6] == "O") or (game_data[1] == "O" and game_data[4] == "O" and game_data[7] == "O") or (game_data[2] == "O" and game_data[5] == "O" and game_data[8] == "O") or (game_data[0] == "O" and game_data[4] == "O" and game_data[8] == "O") or (game_data[2] == "O" and game_data[4] == "O" and game_data[6] == "O") or (game_data[0] == "O" and game_data[1] == "O" and game_data[2] == "O") or (game_data[3] == "O" and game_data[4] == "O" and game_data[5] == "O") or (game_data[6] == "O" and game_data[7] == "O" and game_data[8] == "O"):
+                elif (game_data[0] == "O" and game_data[3] == "O" and game_data[6] == "O") or (game_data[1] == "O" and game_data[4] == "O" and game_data[7] == "O") or (game_data[2] == "O" and game_data[5] == "O" and game_data[8] == "O") or (game_data[0] == "O" and game_data[4] == "O" and game_data[8] == "O") or (game_data[2] == "O" and game_data[4] == "O" and game_data[6] == "O") or (game_data[0] == "O" and game_data[1] == "O" and game_data[2] == "O") or (game_data[3] == "O" and game_data[4] == "O" and game_data[5] == "O") or (game_data[6] == "O" and game_data[7] == "O" and game_data[8] == "O"):
                     print(f"\nPlayer 2 wins! \n")
                     loop = "n"
-                if game_data[0] != " " and game_data[1] != " " and game_data[2] != " " and game_data[3] != " " and game_data[4] != " " and game_data[5] != " " and game_data[6] != " " and game_data[7] != " " and game_data[8] != " ":
+                elif game_data[0] != " " and game_data[1] != " " and game_data[2] != " " and game_data[3] != " " and game_data[4] != " " and game_data[5] != " " and game_data[6] != " " and game_data[7] != " " and game_data[8] != " ":
                     print(f"\nNobody wins! \n")
                     loop = "n"
                 # loop = input("more? ")
